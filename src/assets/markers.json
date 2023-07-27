@@ -1,0 +1,85 @@
+{
+  "atms": [
+    {
+      "id": 1,
+      "name": "Stock Exchange",
+      "address": "Office No.5, 55 DISE Tower, Jinnah Avenue, Islamabad.",
+      "branchCode" : "0407",
+      "branchManager" : " Fatima Kamal",
+      "latitude": 33.721480,
+      "longitude": 73.043290,
+      "phone" : "0345-5122259",
+      "workingHours": "9:00 AM - 5:00 PM"
+    },
+    {
+      "id": 2,
+      "name": "Ufone Tower ISB",
+      "address": "Ufone Tower ISB",
+      "branchCode" : "0131",
+      "latitude": 33.711608,
+      "longitude": 73.057203,
+      "workingHours": "8:30 AM - 4:30 PM"
+    },
+    {
+      "id": 3,
+      "name": "FBR Office",
+      "address": "FBR Office",
+      "branchCode" : "0147",
+      "latitude": 33.73231224193329,
+      "longitude": 73.08864346134884,
+      "workingHours": "9:30 AM - 6:00 PM"
+    },
+    {
+      "id": 4,
+      "name": "Centaurus Mall ATM2",
+      "address": "Centaurus Mall ATM2",
+      "branchCode" : "0404",
+      "latitude": 33.70786666870117,
+      "longitude": 73.05010986328125,
+      "workingHours": "8:00 AM - 4:00 PM"
+    },
+    {
+      "id": 5,
+      "name": "US Embassy4",
+      "address": "US Embassy4",
+      "latitude": 33.723840804035454,
+      "longitude": 73.11739254347991,
+      "workingHours": "10:00 AM - 6:00 PM"
+    },
+    {
+      "id": 6,
+      "name": "F-10 (CIBG)",
+      "address": "4-D, Urfi Center, F-10 Markaz, Islamabad",
+      "branchCode" : "0131",
+      "branchManager" : "Kashif Bashir",
+      "latitude": 33.69584484524159,
+      "longitude": 73.0133718252182,
+      "phone" : "0300-5252998",
+      "workingHours": "10:00 AM - 6:00 PM"
+    },
+    {
+      "id": 7,
+      "name": "H-13 (Sub-Branch) G-11, Isb",
+      "address": "Office#1, Ground Floor, Paris Rose Appartments, Opposite NUST, H-13, Islamabad",
+      "branchCode" : " 0918",
+      "branchManager" : "Muhammad Arslan Qamar",
+      "latitude": 33.66993242671986,
+      "longitude": 72.99872972510235,
+      "phone" : "03073396171",
+      "workingHours": "10:00 AM - 6:00 PM"
+    },
+    {
+      "id": 8,
+      "name": "F-11 Branch",
+      "address": "PLOT#28, AL-KARAM CENTRE, F-11 MARKAZ, ISLAMABAD",
+      "branchCode" : " 0263",
+      "branchManager" : "Muhammad Daud",
+      "latitude": 33.68605879762793,
+      "longitude": 72.98636332154274,
+      "phone" : "0321-7967146",
+      "workingHours": "10:00 AM - 6:00 PM"
+    }
+
+
+  ]
+}
