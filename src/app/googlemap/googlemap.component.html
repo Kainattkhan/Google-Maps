@@ -14,34 +14,33 @@
     </div>
     <div class="divchild">
         <button class="btn" type="button" pButton label="Zoom In" icon="pi pi-plus" (click)="zoomIn(gmap.getMap())"></button>
-        <button class="btn" type="button" pButton label="Zoom Out" icon="pi pi-minus" (click)="zoomOut(gmap.getMap())"></button>    
-        <button class="btn" type="button" pButton label="Clear" icon="pi pi-times" (click)="clear()"></button>
+        <button class="btn" type="button" pButton label="Zoom Out" icon="pi pi-minus" (click)="zoomOut(gmap.getMap())"></button>
     </div>
 </div>
 
 <p-gmap #gmap [style]="{'width':'100%','height':'600px', 'margin-bottom': '1em'}" [options]="options"
-    [overlays]="overlays" (onMapClick)="handleMapClick($event)" (onOverlayClick)="handleOverlayClick($event)"
-    (onOverlayDragEnd)="handleDragEnd($event)">
+    [overlays]="overlays" (onMapClick)="handleMapClick($event)" (onOverlayClick)="handleOverlayClick($event)">
 </p-gmap>
 
-<p-dialog showEffect="fade" [(visible)]="dialogVisible" header="New Location" [style]="{width: '300px'}">
-    <div class="p-grid p-fluid" *ngIf="selectedPosition">
-        <div class="p-col-2"><label for="title">Label</label></div>
-        <div class="p-col-10"><input type="text" autocomplete="off" pInputText id="title" [(ngModel)]="markerTitle">
-        </div>
-        <div class="p-col-2"><label for="lat">Lat</label></div>
-        <div class="p-col-10"><input id="lat" type="text" readonly pInputText [ngModel]="selectedPosition.lat()"></div>
-        <div class="p-col-2"><label for="lng">Lng</label></div>
-        <div class="p-col-10"><input id="lng" type="text" readonly pInputText [ngModel]="selectedPosition.lng()"></div>
-        <div class="p-col-2"><label for="drg">Drag</label></div>
-        <div class="p-col-10">
-            <p-checkbox [(ngModel)]="draggable" [style]="{'margin-top':'.25em'}"></p-checkbox>
-        </div>
-    </div>
+<p-dialog [(visible)]="dialogVisible" header="New Location" [modal]="true" [style]="{ width: '350px' }">
 
+    <div  class="p-col-2"><label for="markerId">ID:</label></div>
+    <div class="p-col-10"><input  type="text" id="markerId" pInput [(ngModel)]="markerId"></div>
+    <div class="p-col-2"><label for="markerAddress">Name:</label></div>
+    <div class="p-col-10"><input type="text" id="markerName" pInput [(ngModel)]="markerName"></div>
+    <div class="p-col-2"><label for="markerAddress">Address:</label></div>
+    <div class="p-col-10"><input type="text" id="markerAddress" pInput [(ngModel)]="markerAddress"></div>
+
+    <div class="p-col-2"><label for="lat">Lat</label></div>
+    <div class="p-col-10"><input id="lat" type="text" readonly pInputText [ngModel]="selectedPosition.lat()"></div>
+    <div class="p-col-2"><label for="lng">Lng</label></div>
+    <div class="p-col-10"><input id="lng" type="text" readonly pInputText [ngModel]="selectedPosition.lng()"></div>
     <ng-template pTemplate="footer">
-        <div>
-            <button type="button" pButton label="Add Marker" icon="pi-plus" (click)="addMarker()"></button>
-        </div>
+      <div class="p-dialog-footer">
+        <button type="button" pButton label="Save" icon="pi pi-check" (click)="addMarker()"></button>
+        <button type="button" pButton label="Cancel" icon="pi pi-times" (click)="dialogVisible = false"></button>
+      </div>
     </ng-template>
-</p-dialog>
+  </p-dialog>
+  
+  
